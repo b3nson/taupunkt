@@ -67,5 +67,11 @@ float taupunkt(float t, float r) {
   // Taupunkttemperatur (°C)
   float tt = (b*v) / (a-v);
   return { tt };  
+}
 
+
+char charVal[16];
+float stringToFloat(String strVal) {
+  strVal.toCharArray(charVal, 16);
+  return atof(charVal);
 }
